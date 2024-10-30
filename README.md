@@ -18,6 +18,11 @@ A movie management application that allows users to register, rate, and view det
 - **Security:** Spring Security with JWT
 - **Frontend:** React (not yet developed)
 
+## Endpoints added so far
+
+- **Add a movie** - Allows authenticated users to insert a new movie into their movie list.
+- **Check saved movies** - Enables authenticated users to view the movies they have previously added to their account.
+
 ## How to Run the Project
 
 ### Prerequisites
