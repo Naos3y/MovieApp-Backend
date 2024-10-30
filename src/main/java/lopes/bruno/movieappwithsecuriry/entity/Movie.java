@@ -33,9 +33,6 @@ public class Movie {
 
     private String genre;
 
-    @Column(name = "poster_url")
-    private String posterUrl;
-
     @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL)
     private Set<UserMovie> userMovies = new HashSet<>();
 
