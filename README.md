@@ -30,3 +30,18 @@ A movie management application that allows users to register, rate, and view det
 
 1. Create a database in PostgreSQL.
 2. Configure the database credentials in the `application.yml` file.
+
+### Running the Application
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Naos3y/MovieApp-Backend.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd MovieApp-Backend
+   ```
+3. Build and run the application:
+   ```bash
+   mvn spring-boot:run
+   ```
