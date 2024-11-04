@@ -2,6 +2,7 @@ package lopes.bruno.movieappwithsecuriry.controller;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import lopes.bruno.movieappwithsecuriry.dto.MoviesWithUserDTO;
 import lopes.bruno.movieappwithsecuriry.entity.Movie;
 import lopes.bruno.movieappwithsecuriry.service.MovieService;
 import org.springframework.http.HttpStatus;
@@ -27,5 +28,10 @@ public class MovieController {
     public ResponseEntity<List<Movie>> getUserMovies(Principal principal) {
         List<Movie> userMovies = movieService.getMoviesByUser(principal.getName());
         return ResponseEntity.ok(userMovies);
+    }
+
+    @GetMapping()
+    public ResponseEntity<List<MoviesWithUserDTO>> getAllMovies(){
+        return ResponseEntity.ok(movieService.getAllMoviesWithUsers());
     }
 }
